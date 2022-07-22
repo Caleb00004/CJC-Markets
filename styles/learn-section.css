@@ -1,0 +1,184 @@
+.learn-section {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    position: relative;  
+/*    height: 500px; */
+    width: 100%;    
+    align-items: center;
+    padding-bottom: 50px;
+}
+.learn-section > h1 {
+    color: #0945c4;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+section{
+    display: flex;
+
+}
+
+/* To reduce overall width/size of cards(grid)*/
+.swiper{
+/*    background-color: red; */
+/*    height: 10%; */
+/*    height: 350px; */
+    width: 90%;
+}
+
+.card-content{
+    background-color: white; 
+    border: 0.1px solid aliceblue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    width: 95%;
+    height: 100%;
+    color: black;    
+}
+
+section .card .image{
+  height: 200px;
+  width: 100%;
+}
+
+section .card .image img{
+  height: 100%;
+  width: 100%;
+
+  border: 0.1px solid #fff;
+    border-radius: 5px;
+}
+
+.swiper-pagination{
+  position: absolute;
+}
+
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: purple;
+}
+
+/* Left and Right swippers*/
+.swiper-button-next, .swiper-button-prev{
+    margin-right: 3%;
+    margin-left: 3%;
+/*    margin-top: 20px; */
+    opacity: 0.7;
+    color: white;
+    background-color: #0945c4;
+    transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: green;
+}
+/*
+.learn-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+*/
+.Lcard {
+    text-align: justify;
+    margin-top: 10px;
+    border: 0.1px solid white;
+    border-radius: 10px;
+    background-color: white;
+/*    padding-bottom: 32px; */
+}
+.Lcard > h3 {
+    color: #0945c4;
+    font-size: 15px; 
+    max-width: 70%;
+}
+.Lcard > p {
+    max-width: 80%;
+    margin-top: 5px;
+    font-size: 10px; 
+    padding-bottom: 20px;
+/*    margin-bottom: 20px; */
+}
+
+.Lcard >p,h3 {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.hide-txt {
+    width: 35%;
+    height: 15px;
+    color: orange;
+    cursor: pointer;
+}
+
+#more {
+    display: none;
+}
+
+/*
+.learn-section {
+    padding-top: 1px;
+    background-color:aliceblue;
+    height: 550px;    
+}
+.learn-section > h2 {
+    text-align: center;
+    color: #0945c4;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.learn-cards {
+    display: grid;
+/*    grid-template-columns: auto auto auto ; *
+    grid-template-columns: 30% 30% 30%; 
+    margin: 3% 5%;
+    grid-gap: 5%;
+    border: 3px solid black; 
+}
+
+.Lcard {
+    border: 0.1px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+.Lcard > h3 {
+    color: #0945c4;
+    font-size: 17px;
+    font-weight: normal;
+    max-width: 70%;
+}
+.Lcard > p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.Lcard >p,h3 {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.hide-txt {
+    width: 60px;
+    color: orange;
+    cursor: pointer;
+}
+
+#more {
+    display: none;
+}
+
+*/

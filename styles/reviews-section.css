@@ -1,0 +1,43 @@
+.review-section {
+    background-color: aliceblue;
+    padding: 40px;
+}
+.review-section > h1 {
+    text-align: center;
+    color: #0945c4;
+    font-size: 2vw;
+    padding-bottom: 20px;
+}
+.main-carousel {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carousel-cell {
+    padding: 20px 20px;
+    width: 30%;
+    padding-bottom: 20px;
+    background-color: white;
+    margin: 10px;
+}
+.checked {
+    color: orange;
+}
+span {
+    color: orange;
+}
+.carousel-cell > h3 {
+    padding-top: 5px;
+    padding: 0;
+}
+.carousel-cell > p {
+    padding-top: 10px;
+    margin-left: 0;
+}
+.flickity-page-dots .dot {
+    height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}

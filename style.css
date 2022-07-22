@@ -1,0 +1,347 @@
+@font-face {
+    font-family: "outfit";
+    src: url("./Outfit-VariableFont_wght.ttf")
+}
+
+* {
+    margin: 0;
+    font-family:'outfit';
+/*    outline: 1px solid limegreen !important;  */
+}
+
+/* Header Section */
+header {
+    padding: 5px;
+    background-color: #111e51;
+/*    font-size: 0.8vw; */
+    font-size: 0.8vw;
+}
+header > .header-elements {
+/*    background-color: brown; */
+    display: flex;
+    margin-left: 65%;
+    margin-right: 10px;
+/*    margin-top: -25px; */
+}
+.header-elements > p {
+    color: white;
+    padding: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+button {
+	background: #0945c4;
+	color: white;
+    font-size: 0.8vw;
+/*    font-size: 0.7vw;  */
+    margin: 10px 60px;
+    padding: 10px 10px;
+    width: 30%;
+/*    width: 150px; */
+	border: none;
+	border-radius: 3px;
+    cursor: pointer;
+}
+i {
+    color: #111e51;
+    padding-right: 1px;
+    margin-left: -3px; 
+}
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    font-family: Arial;
+    padding-left: 5%;
+}
+  
+  /* Links inside the navbar */
+.navbar > ul > li > a {
+    float: left;
+    font-size: 12px;
+    color: #111e51;
+    text-align: center;
+    padding: 2px 16px; 
+    text-decoration: none;
+}
+  
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    margin-top: 5px;
+}
+  
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 12px;
+    border: none;
+    outline: none;
+    color: #111e51;
+    padding: 14px 19px; 
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+  
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #0945c4;
+  }
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar > ul > li > img {
+    height: 50px;
+    margin: -20px -5px;
+    padding-right: 10px;
+}
+
+.navbar > ul > li {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 16px 16px;
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 35%;
+    left: 1%;
+    text-align: justify;
+    margin-left: 60px;
+  }
+  .top-left > h2 {
+    font-weight: 1;
+    font-size: 3vw;
+    padding-bottom: 10px;
+  }
+
+  .top-left > p {
+    font-weight: lighter;
+    max-width: 60%;
+    margin-bottom: 5px;
+  }
+  .top-left > button {
+    margin: 0;
+    margin-top: 15px;
+    font-size: 11px;
+  }
+    
+  /* Bottom right text */
+  .bottom-right {
+    color: red;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+/* Welocme section */
+.welcome-section {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: -3px;
+    margin-left: 150px;
+}
+
+.welcome-section > img {
+    opacity: 0.3;
+}
+
+.welcome-text {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.1vw;
+/*    margin-top: 80px; */
+}
+.welcome-text > h1 {
+    color: #0945c4;
+}
+.welcome-text > p {
+    margin-top: 20px;
+    max-width: 70%;
+}
+
+/* Why section */
+.why-section {
+    background-color: #24367f;
+    height: 400px;
+    color: white;
+    padding-top: 40px;
+}
+.why-section > h1 {
+    text-align: center;
+}
+.why-button {
+    padding: 0px 30% ;
+    text-align: center;
+}
+.why-button > button {
+    font-size: 10px;
+}
+.why-cards {
+/*    display: flex; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 3% 3%;
+}
+.card > img {
+    width: 25%;
+    margin-left: 20%
+}
+.card > h3 {
+    font-size: 100%;
+    padding: 10px;
+}
+.card > ul > li {
+    font-size: 75%;
+}
+.card > ul {
+    padding-left: 25px; 
+}
+.card > ul > li::marker {
+    color: orange;
+}
+
+@media screen and (max-width: 900px) {
+        * {
+/*            border: 1px solid limegreen !important;  */
+        }
+        /* Header Section */
+        header {
+            padding: 5px;
+            font-size: 0.7vw;
+        }
+        header > .header-elements {
+            margin-left: 60%;
+            margin-right: 5px;
+        /*    margin-top: -25px; */
+        }
+        .header-elements > p {
+            padding: 1%;
+        }
+        button {
+            font-size: 0.7vw;
+            margin: 10px 60px;
+            padding: 5px 1px;
+            width: 25%;
+        }
+        .navbar > ul > li > img {
+            height: 45px;
+            margin: -15px -10px;
+            padding-right: 1px;
+        }
+        .navbar > ul > li > a {
+            font-size: 9px;
+            padding: 2px 5px; 
+        }
+        
+        /* The dropdown container */
+        .dropdown {
+            margin-top: 5px;
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+            font-size: 9px;
+            padding: 14px 5px; 
+            margin: 0; /* Important for vertical align on mobile phones */
+        }
+        /* Image Text */
+        .top-left {
+            position: absolute;
+            top: 35%;
+            left: 1%;
+            text-align: justify;
+            margin-left: 60px;
+        }
+        .top-left > h2 {
+            font-weight: 1;
+            font-size: 2vw;
+            padding-bottom: 10px;
+        }
+        
+          .top-left > p {
+            font-weight: lighter;
+            font-size: 1.3vw;
+            max-width: 60%;
+            margin-bottom: 5px;
+          }
+          .top-left > button {
+            margin: 0;
+            padding: 4px 1px;
+            margin-top: 15px;
+            font-size: 6px;
+          }
+            
+          /* Bottom right text */
+          .bottom-right {
+            color: red;
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+          }
+          /* Why section */
+        .why-section {
+            height: 320px;
+            padding-top: 40px;
+        }
+        .why-section > h1 {
+            font-size: 18px;
+        }
+        .why-button {
+            padding: 0px 30%;
+        }
+        .why-button > button {
+            font-size: 6px;
+        }
+        .why-cards {
+            margin: 3% 3%;
+        }
+        .card > img {
+            width: 20%;
+            margin-left: 20%
+        }
+        .card > h3 {
+            font-size: 70%;
+            padding: 7px;
+        }
+        .card > ul > li {
+            font-size: 1.3vw;
+        }
+}

@@ -1,0 +1,43 @@
+.open-section {
+    background-color: #0945c4;
+    padding: 35px 35px;
+    color: white;
+    text-align: center;
+}
+
+.open-cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 3% 3%;
+}
+.o-Card {
+    text-align: justify;
+    margin: 3%;
+}
+
+.o-Card > h3 {
+    font-weight: lighter;
+    padding-left: 0;
+}
+.open-section > h1,h2 {
+    font-weight: lighter;
+}
+.o-Card > p{
+    max-width: 60%;
+}
+
+.open-section > button {
+    margin: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 10%;
+}
+
+.orange-btn {
+    border: none;
+    background-color: orange;
+}
+
+.normal-btn {
+    border: 1px solid white;
+}

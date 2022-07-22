@@ -1,0 +1,22 @@
+.deposit-section {
+    padding: 30px 40px;
+/*    background-color: red; */
+    text-align: center;
+    color: #0945c4;
+    font-size: 1.1vw;
+}
+
+.deposit-section > h1 {
+    font-weight: lighter;
+}
+.icon-grid {
+    margin-top: 15px;
+/*    background-color: blue; */
+    width: 100%;
+}
+
+.icon-grid > img {
+    width: 9%;
+/*    background-color: yellow; */
+    margin: 2%;
+}
