@@ -16,7 +16,6 @@
 .table-section > button {
     font-size: 12px;
     margin-top: 25px;
-    width: 12%;
 }
 table {
     border-radius: 8px;
@@ -43,7 +42,6 @@ th {
     border-right-style: solid;
     border-right-width: 1.5px;
     border-right-color: black;
-
 }
 td {
     border: none;
@@ -54,14 +52,24 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 900px) {
+    table {
+        border: 0.5px solid ;
+    }
+
+    th {
+        border-bottom-width: 0.5px;
+        border-left-width: 0.5px;
+        border-right-width: 0.5px;
+    }
     .table-section > h2 {
         font-size: 20px;
     }
     .table-section > p {
         font-size: 9px;
+        width: 15rem;
     }
     .table-section > button {
-        font-size: 1.2vw;
+        font-size: 0.6rem;
     }
     th {
         font-size: 14px;
@@ -72,4 +80,28 @@ tr:nth-child(even) {
         border: none;
         padding: 12px;
     }
+
+}
+
+@media screen and (max-width: 650px){
+    th {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+    td {
+        font-size: 0.6rem;
+        border: none;
+        padding: 9px;
+    }
+
+    .table-section > h2 {
+        font-size: 1rem;
+    }
+/*    .table-section > p {
+        padding-top: 10px;
+        width: 35%;
+        font-size: 1vw;
+        margin-right: auto;
+        margin-left: auto;
+    }   */
 }

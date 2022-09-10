@@ -7,6 +7,9 @@
     background-color: aliceblue;
 }
 
+.explore-section img {
+  height: 400px;
+}
   /* Top left text */
   .left {
     position: absolute;
@@ -45,6 +48,9 @@
     .explore-section > img {
         height: 300px;
     }
+    .left > hr {
+      border: 2px solid orange;
+    } 
     .left > h2 {
         font-size: 20px;
     }
@@ -59,3 +65,20 @@
       background-color: orange;
     }
   }
+
+  @media screen and (max-width: 480px){
+    .explore-section img {
+      height: 280px;
+    }
+    .left > button {
+      font-size: 8px;
+    }
+    .left > hr {
+      border: 1px solid orange;
+    }
+    .left > p {
+      max-width: 70%;
+      margin-bottom: 5px;
+    }
+  }
+

@@ -82,11 +82,11 @@
     <div class="container">
         <img src="./image/Hero Img.png" alt="Snow" style="width: 100%;">
         <div class="top-left">
-            <h2>Enjoy Free and fully <br><b>Customized Trading Tools</b></h2>
+            <h1>Enjoy Free and fully <br><b>Customized Trading Tools</b></h1>
             <p>Trade with our custom indicator and a fully operational AI bot</p>
             <button>START TRADING</button>
         </div>
-        <div class="bottom-right"><h2>Clikc button</h2></div>
+<!--        <div class="bottom-right"><h2>Clikc button</h2></div> -->
     </div>
 
     <!-- WELCOME SECTION -->
@@ -222,14 +222,14 @@
 
     <!-- EXPLORE SECTION -->
     <div class="explore-section" >
-        <img src="./image/Crypto bg.png" width="100%" height="400px"> 
+        <img src="./image/Crypto bg.png" width="100%" > 
         <div class="left">
             <h2>Explore the World of <br>Cryptocurrencies</h2>
             <hr>
             <p>Build your Crypto-based portfolio and trade your favourite cryptocurrencies
                 such as Bitcoin, Ethereurm, Litecoin, Tether, etc.
             </p>
-            <button style="width: 20%;">TRADE CRYPTO</button>
+            <button>TRADE CRYPTO</button>
             <P class="low" style="font-size: 10px; opacity: 0.5; margin-top: 10px;">Before investing, consider and ensure your investmetn objectives, level of experience
                 and risk appetite carefully, Trade at your risk
             </P>
@@ -266,6 +266,7 @@
         </div>
     </div>
 -->
+<!--
     <div class="learn-section">
         <h1>Learn More About Forex Trading</h1>  
         <section>
@@ -280,18 +281,19 @@
             <div class="swiper-pagination"></div>
         </section>
 
-        <!-- Swiper JS -->
+        <!- Swiper JS ->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-        <!-- Initialize Swiper -->
+        <!- Initialize Swiper ->
         <script>
             var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
             spaceBetween: 40,
             slidesPerGroup: 3,
+        /*  
             loop: true,
             loopFillGroupWithBlank: true,
-        /*      pagination: {
+        pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             }, */
@@ -299,26 +301,48 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            breakpoints: {
+            // when window width is >= 480px
+            480: {
+            loop: true,
+            loopedSlides: 1,
+            slidesPerView:'auto',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerGroup: 1,
+                slidesPerView: 3,
+                spaceBetween: 40,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                
+                loopedSlides: 1,
+                direction: "horizontal"
+            }}
+            
             });
         </script>
     </div> 
-
+-->
     <!-- Join-us section-->
     <div class="join-section">
         <div class="join-content">
-        <h2 class="joinUs">JOIN US</h2>
-        <h2 class="joinStart">Start Trading Anywhere,<br> Anytime.</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam hic soluta voluptate
-            molestiae nostrum, omnis eius aut unde, ducimus cum voluptates provident, ipsa consequatur
-        </p>
+            <h2 class="joinUs">JOIN US</h2>
+            <h2 class="joinStart">Start Trading Anywhere,<br> Anytime.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam hic soluta voluptate
+                molestiae nostrum, omnis eius aut unde, ducimus cum voluptates provident, ipsa consequatur
+            </p>
             <div class="btn-group">
-                <button><img src="./image/play-store-logo.png"><p>Download it from <br><b>GOOGLE PLAY</b></p></button>
+                <button><img src="./image/play-store-logo.png"><p>Download it from<br><b>GOOGLE PLAY</b></p</button>
                 <button><img src="./image/apple-logo.png"><p>Download it from<br><b>APP STORE</b></p></button>
             </div>
         </div>
     </div>
 
-    <!-- MISSING A SECTION -->
+<!---->    <!-- MISSING A SECTION -->
     <div class="review-section">
         <h1>What Our Clients Say about CJC Markets</h1>
         <div class="main-carousel" data-flickity>
@@ -398,7 +422,7 @@
         </script>
 
 
-    <!-- WHAT SECTION-->
+    <!-- Open SECTION-->
     <div class="open-section">
         <h1>Open an Account in 4 Easy Steps</h1>
         <div class="open-cards">

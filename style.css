@@ -6,23 +6,36 @@
 * {
     margin: 0;
     font-family:'outfit';
-/*    outline: 1px solid limegreen !important;  */
+/*    outline: 1px solid limegreen !important;   */
+    box-sizing: border-box;
 }
+
+h1 {
+    font-size: clamp(1.4rem, 2.5vw, 2.2rem)
+}
+
+/*
+p {
+    font-size: 0.9rem; 
+} */    
 
 /* Header Section */
 header {
     padding: 5px;
     background-color: #111e51;
-/*    font-size: 0.8vw; */
-    font-size: 0.8vw;
+    font-size: clamp(0.6rem, 0.8vw, 0.9rem);
 }
+
 header > .header-elements {
-/*    background-color: brown; */
     display: flex;
-    margin-left: 65%;
-    margin-right: 10px;
-/*    margin-top: -25px; */
+    justify-content: flex-end;
+    border: 1px solid;
 }
+
+.header-elements > button {
+    margin: 10px 10px; 
+}
+
 .header-elements > p {
     color: white;
     padding: 1%;
@@ -33,12 +46,8 @@ header > .header-elements {
 button {
 	background: #0945c4;
 	color: white;
-    font-size: 0.8vw;
-/*    font-size: 0.7vw;  */
-    margin: 10px 60px;
-    padding: 10px 10px;
-    width: 30%;
-/*    width: 150px; */
+    padding: 8px 30px;
+    font-size: 0.7rem;
 	border: none;
 	border-radius: 3px;
     cursor: pointer;
@@ -53,6 +62,7 @@ i {
     overflow: hidden;
     font-family: Arial;
     padding-left: 5%;
+
 }
   
   /* Links inside the navbar */
@@ -146,16 +156,18 @@ i {
     text-align: justify;
     margin-left: 60px;
   }
-  .top-left > h2 {
+  .top-left > h1 {
     font-weight: 1;
-    font-size: 3vw;
-    padding-bottom: 10px;
+   padding-bottom: 10px;
   }
 
   .top-left > p {
     font-weight: lighter;
     max-width: 60%;
-    margin-bottom: 5px;
+    font-size: clamp(0.8rem, 1.2vw, 1.3rem);
+/*    font-size: 1.3rem;  */
+/*    font-size: 0.8rem; */
+    margin-bottom: 5px; 
   }
   .top-left > button {
     margin: 0;
@@ -175,18 +187,19 @@ i {
 .welcome-section {
     display: grid;
     grid-template-columns: 40% 60%;
+    padding-left: 7rem; 
     margin-top: -3px;
-    margin-left: 150px;
 }
 
 .welcome-section > img {
+    height: 100%;
     opacity: 0.3;
 }
 
 .welcome-text {
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 1.1vw;
+    font-size: clamp(0.7rem, 1.1vw, 0.8rem);
 /*    margin-top: 80px; */
 }
 .welcome-text > h1 {
@@ -200,12 +213,12 @@ i {
 /* Why section */
 .why-section {
     background-color: #24367f;
-    height: 400px;
     color: white;
-    padding-top: 40px;
+    padding-top: 3%;
 }
 .why-section > h1 {
     text-align: center;
+    font-weight: lighter;
 }
 .why-button {
     padding: 0px 30% ;
@@ -213,6 +226,7 @@ i {
 }
 .why-button > button {
     font-size: 10px;
+    margin-bottom: 5%;
 }
 .why-cards {
 /*    display: flex; */
@@ -226,6 +240,7 @@ i {
 }
 .card > h3 {
     font-size: 100%;
+    font-weight: lighter;
     padding: 10px;
 }
 .card > ul > li {
@@ -242,25 +257,19 @@ i {
         * {
 /*            border: 1px solid limegreen !important;  */
         }
+
         /* Header Section */
         header {
             padding: 5px;
-            font-size: 0.7vw;
         }
-        header > .header-elements {
-            margin-left: 60%;
-            margin-right: 5px;
-        /*    margin-top: -25px; */
-        }
+        
         .header-elements > p {
             padding: 1%;
         }
         button {
-            font-size: 0.7vw;
-            margin: 10px 60px;
-            padding: 5px 1px;
-            width: 25%;
-        }
+            padding: 5px 10px;
+            font-size: 0.5rem;
+        } 
         .navbar > ul > li > img {
             height: 45px;
             margin: -15px -10px;
@@ -282,6 +291,7 @@ i {
             padding: 14px 5px; 
             margin: 0; /* Important for vertical align on mobile phones */
         }
+
         /* Image Text */
         .top-left {
             position: absolute;
@@ -292,22 +302,14 @@ i {
         }
         .top-left > h2 {
             font-weight: 1;
-            font-size: 2vw;
+        /*    font-size: 2vw;  */
             padding-bottom: 10px;
         }
-        
-          .top-left > p {
-            font-weight: lighter;
-            font-size: 1.3vw;
-            max-width: 60%;
-            margin-bottom: 5px;
-          }
+                  
           .top-left > button {
-            margin: 0;
-            padding: 4px 1px;
-            margin-top: 15px;
-            font-size: 6px;
-          }
+/*            padding: 5px 10px;
+            font-size: 0.6rem; */
+          } 
             
           /* Bottom right text */
           .bottom-right {
@@ -316,11 +318,12 @@ i {
             bottom: 8px;
             right: 16px;
           }
+
+          /* Welcome section */
+          .welcome-text > h1 {
+            font-size: 1.1rem
+          }
           /* Why section */
-        .why-section {
-            height: 320px;
-            padding-top: 40px;
-        }
         .why-section > h1 {
             font-size: 18px;
         }
@@ -343,5 +346,87 @@ i {
         }
         .card > ul > li {
             font-size: 1.3vw;
+        }
+}
+
+@media screen and (max-width: 650px){
+    button {
+
+    }
+    .navbar > ul {
+        display: none;
+    }
+    .top-left {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        text-align: justify;
+        margin-left: 0;
+    }
+    .top-left > h1 {
+        font-size: 1.3rem;
+    }
+    .top-left > p {
+        font-size: 0.7rem;
+        max-width: 55%;
+    }
+    .top-left > button {
+        font-size: 0.5rem;
+    }
+
+    .welcome-section {
+        grid-template-columns: 30% 70%;
+        padding-left: 4rem; 
+        margin-top: -3px;
+    }
+
+    .welcome-text > h1 {
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    .welcome-text > p {
+        font-size: 0.6rem;
+        max-width: 90%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    * {
+/*        outline: 1px solid limegreen !important;     */
+    }
+    .navbar {
+        height: 30px;
+    }
+
+    .container {
+        height: 200px;
+    }
+    .container img {
+        height: 100%;
+    }
+    .why-section h3 {
+        font-size: 0.6rem;
+    }
+
+    .welcome-section {
+        padding-left: 2rem; 
+    }
+
+    .why-cards {
+        /*    display: flex; */
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin: 2% 2%;
+        }
+        
+        .card > ul {
+            padding-left: 10px; 
+        }
+
+        .card > ul > li {
+            font-size: 0.4rem;
         }
 }
