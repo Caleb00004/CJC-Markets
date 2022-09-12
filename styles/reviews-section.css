@@ -5,7 +5,7 @@
 .review-section > h1 {
     text-align: center;
     color: #0945c4;
-    font-size: 2vw;
+    font-size: clamp(0.9rem, 2vw, 1.7rem);
     padding-bottom: 20px;
 }
 .main-carousel {
@@ -21,6 +21,11 @@
     background-color: white;
     margin: 10px;
 }
+/* .dot {
+    background-color: blue !important;
+
+} */
+
 .checked {
     color: orange;
 }
@@ -28,16 +33,65 @@ span {
     color: orange;
 }
 .carousel-cell > h3 {
+    font-size: clamp(0.8rem, 1.2vw, 1.3rem);
     padding-top: 5px;
     padding: 0;
 }
 .carousel-cell > p {
+    font-size: clamp(0.6rem, 0.9vw, 1rem);
     padding-top: 10px;
     margin-left: 0;
 }
 .flickity-page-dots .dot {
-    height: 4px;
-  width: 40px;
-  margin: 0;
-  border-radius: 0;
+    background-color: blue !important;
+    height: 400%;
+    width: 40%;
+    margin: 0;
+    border-radius: 0;
+}
+
+@media screen and (max-width: 650px){
+    * {
+        outline: 0.1px solid green;
+    }
+    .main-carousel {
+        width: 95%;
+    }
+    .carousel-cell {
+        width: 30%;
+        padding: 0px;        
+        margin: 10px;
+    }   
+}
+
+@media screen and (max-width: 480px){
+    .review-section {
+        background-color: aliceblue;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .main-carousel {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .carousel-cell {
+        padding: 5px 7px;
+        width: 30%;
+        padding-bottom: 10px;
+/*        margin: 10px; */
+        margin-bottom: 0px;
+    }
+
+    .carousel-cell > p {
+        font-size: 0.5rem;
+    }
+    .carousel-cell > h3 {
+        font-size: 0.6rem;
+        padding-top: 5px;
+        padding: 0;
+    }    
+    
 }
