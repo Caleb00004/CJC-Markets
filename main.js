@@ -1,31 +1,31 @@
 let data = [{   
-    head: "Term of the Week - Stochastic Oscillator",
+    head: "Term of the Week - Stochastic",
     summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum, rerum quaerat praesentium laboriosam nihil
-    quod tenetur! Rem, aliquid? Animi fugit exercitationem maxime ab reiciendis, voluptatem similique et a in!`,
-    image: "blog 2.png"
+    quod tenetur! Rem, aliquid? Animi.`,
+    image: "blog 1.png"
 },
 {   
     head: "Divergence Trading - An introduction for Traders",
-    summary: `Olumo Rock is a mountain in south-western Nigeria. It is located in the city of Abeokuta, Ogun State,
-    and was normally used as a natural fortress during inter-tribal warfare in the 19th century. Its patron spirit is venerated in the Yoruba
-    religion as an orisha.The name olumo is the combination of two words- 'olu' which means god/deity, and 'mo' which means moulded.`,
-    image: "blog 1.png",
+    summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum, rerum quaerat praesentium laboriosam nihil
+    quod tenetur! `,
+    image: "blog 2.png",
 },
 {   
-    head: "Term of the Week - Stochastic Oscillator",
+    head: "Term of the Week - Stochastic",
     summary: `officially the Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia,
                   situated in the Indian Ocean. It lies southwest of Sri Lanka and India`,
     image: "blog 3.png"
 },
 {   
     head: "Eiffel tower",
-    summary: `lorem ipsum went outside to kiss a fellow and ny mistake she kissed a snake how many does she need to survive  not being dead.`,
-    image: "blog 2.png"
+    summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum, rerum quaerat praesentium laboriosam nihil
+    quod tenetur! Rem, aliquid? Animi fugit exercitationem maxime.`,
+    image: "blog 1.png"
 },
 {   
     head: "Burjh khalifa",
-    summary: `officially the Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia,
-                  situated in the Indian Ocean. It lies southwest of Sri Lanka and India`,
+    summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum, rerum quaerat praesentium laboriosam nihil
+    quod tenetur! Rem, aliquid? Animi fugit exercitationem maxime.`,
     image: "blog 1.png"
 }
 ]
@@ -33,26 +33,30 @@ let data = [{
 function displayCarousel(image,head,summary) {
     
     return (`
-        <div class="swiper-slide card">
             <div class="card-content">
             <div class="image">
-                <img src="./image/${image}" alt="">
+                <img src="./image/${image}" alt=""></img>
             </div>
-
             <div class="Lcard">
                 <h3>${head}</h3>
-                <p>${summary}</p>
-                <p class="hide-txt" id="hide-btn" onclick="hideText(02)" >READ MORE</p>    
+                <p class='summary'>${summary}</p>
+                    <p class="hide-txt" id="hide-btn" onclick="hideText(02)" >READ MORE</p>    
             </div>
             </div>
-        </div>
-    `)
+            `
+    )
 }
 
-mapData = data.map(dataItem => displayCarousel(dataItem.image,dataItem.head,dataItem.summary))
-console.log(mapData)
+//let getDoc = document.getElementById("carousle-cell")
+mapData = data.map(dataItem => {
+    return displayCarousel(dataItem.image,dataItem.head,dataItem.summary)}
+)
 
-document.getElementById("swipper-wrapper-content").innerHTML += mapData
+//console.log(mapData)
+
+
+document.getElementById("learnSec").innerHTML = mapData
+
 /* function hideText(id) {
     console.log(id)
     document.get

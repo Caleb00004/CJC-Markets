@@ -1,3 +1,4 @@
+
 .review-section {
     background-color: aliceblue;
     padding: 40px;
@@ -51,9 +52,6 @@ span {
 }
 
 @media screen and (max-width: 650px){
-    * {
-        outline: 0.1px solid green;
-    }
     .main-carousel {
         width: 95%;
     }

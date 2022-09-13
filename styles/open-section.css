@@ -39,7 +39,9 @@
     border: none;
     background-color: orange;
 }
-
+.orange-btn:hover {
+    background-color: rgb(211, 120, 8);
+}
 .normal-btn {
     border: 1px solid white;
 }

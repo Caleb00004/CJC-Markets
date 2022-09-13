@@ -53,7 +53,11 @@
     padding-right: 10px;
     background-color: white;
     color: #0945c4;
-    border: 2px solid #0945c4;
+    border: 2px solid #1258f0;
+}
+.btn-group > button:hover {
+    background-color: rgb(60, 60, 249);
+    color: white;
 }
 
 .btn-group > button > img {

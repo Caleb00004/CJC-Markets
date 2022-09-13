@@ -1,229 +1,123 @@
-.learn-section {
-    margin: 0;
-    padding: 0;
+.flickity-button {
+    background: blue;
+}
+
+.flickity-button:hover {
+    background: darkblue;
+}
+
+.flickity-prev-next-button {
+    width: 2%;
+    height: 10%;
+    border-radius: 5px;
+    margin: 0px 2% 0px 2.5%;
+}
+
+/* icon color */
+.flickity-button-icon {
+    fill: black;
+    color: blue;
+    padding: 3px 3px;
+}
+
+.learnSec {
     background-color: aliceblue;
-    align-items: center;
-    justify-content: center;
-    position: relative;  
-/*    height: 500px; */
-    width: 100%;
-    align-items: center;
-    padding-bottom: 50px;
-}
-
-.learn-section > h1 {
-    color: #0945c4;
-    text-align: center;
-    margin-bottom: 30px;
-    padding-top: 10px;
-}
-
-section{
-    display: flex;
-}
-
-/* To reduce overall width/size of cards(grid)*/
-.swiper{
-/*    background-color: red; */
-/*    height: 10%; */
-/*    height: 350px; */
-    width: 90%;
-}
-
-.card-content{
-    background-color: white; 
-    border: 0.1px solid aliceblue;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 100;
-    width: 95%;
-    height: 100%;
-    color: black;    
-}
-
-section .card .image{
-  width: 100%;
-}
-
-section .card .image img{
-  height: 100%;
-  width: 100%;
-
-  border: 0.1px solid #fff;
-    border-radius: 5px;
-}
-
-.swiper-pagination{
-  position: absolute;
-}
-
-.swiper-pagination-bullet{
-  height: 7px;
-  width: 26px;
-  border-radius: 25px;
-  background: purple;
-}
-
-/* Left and Right swippers*/
-.swiper-button-next, .swiper-button-prev{
-    margin-right: 3%;
-    margin-left: 3%;
-/*    margin-top: 20px; */
-    opacity: 0.7;
-    color: white;
-    background-color: #0945c4;
-    transition: all 0.3s ease;
-}
-.swiper-button-next:hover, .swiper-button-prev:hover{
-  opacity: 1;
-  color: green;
-}
-/*
-.learn-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    position: relative;
-    z-index: 100;
-}
-*/
-.Lcard {
-    text-align: justify;
-    margin-top: 10px;
-    border: 0.1px solid white;
-    border-radius: 10px;
-    background-color: white;
-/*    padding-bottom: 32px; */
-}
-.Lcard > h3 {
-    color: #0945c4;
-    font-size: clamp(0.8rem, 1.3vw, 1.4rem);
-    max-width: 90%;
-}
-.Lcard > p {
-    max-width: 80%;
-    margin-top: 5px;
-    font-size: clamp(0.5rem, 0.8vw, 1rem);
-/*    font-size: 10px;  */
+    color: aliceblue;
     padding-bottom: 20px;
-/*    margin-bottom: 20px; */
-}
-
-.Lcard >p,h3 {
     padding-left: 5%;
-    padding-right: 5%;
+    padding-top: 20px;
 }
 
+.card-content {
+    border: 0.1px solid white; 
+    border-radius: 10px; 
+    width: 25%;
+    background-color: white; 
+    margin: 0px 5% 0px 5%;
+}
+
+.card-content img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.Lcard {
+    background-color: white;
+    margin: 0;
+    padding: 0px 5% 0px 5%;
+}
+
+.Lcard h3 {
+    color: #0945c4;
+    max-width: 80%;
+    font-size: clamp(0.8rem, 1.3vw, 1.5rem);
+}
+
+.Lcard p {
+    margin-top: 10px;
+    font-size: clamp(0.5rem, 0.9vw, 1rem);
+}
+.summary {
+    color: black;
+}
 .hide-txt {
-    width: 35%;
-    height: 15px;
+    padding-top: 10px;
     color: orange;
-    cursor: pointer;
+    padding-bottom: 5%;
 }
 
-#more {
-    display: none;
+@media screen and (max-width: 650px){
+
+    .Lcard h3 {
+        color: #0945c4;
+        max-width: 100%;
+        font-size: 0.7rem;
+    }
+    .flickity-prev-next-button {
+    }
 }
+
 
 @media screen and (max-width: 480px){
-    * {
-        outline: 1px solid red;
+    .flickity-prev-next-button {
+        width: 2%;
+        height: 10%;
+        border-radius: 5px;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-top: -20px;
     }
-
-    .swiper-pagination-bullet{
-        height: 1px;
-        width: 26px;
-        border-radius: 25px;
-        background: purple;
-    }
-    
-    /* Left and Right swippers*/
-    .swiper-button-next, .swiper-button-prev{
-        margin-right: 3%;
-        margin-left: 3%;
-
-        width: 10px;
-    /*    margin-top: 20px; */
-        opacity: 0.7;
-        color: white;
-        background-color: #0945c4;
-        transition: all 0.3s ease;
-    }
-    .Lcard {
-        height: 2000px;
-    }
-
-    .Lcard p,h3 {
-        padding-left: 10%;
-        padding-right: 10%;
+    .learnSec {
+        padding-left: 3%;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .Lcard h3 {
-        font-size: 0.5rem;
+        color: #0945c4;
         max-width: 100%;
+        font-size: 0.6rem;
     }
-
     .Lcard p {
         font-size: 0.5rem;
-        max-width: 100%;
     }
-}
+    .card-content img {
+        height: 5rem;
+    }
+    .card-content {
+        border: 0.1px solid white; 
+        border-radius: 10px; 
+        width: 28%;
+        background-color: white; 
+        margin: 0px 5% 0px 5%;
+    }
+    .card-content {
+        border: 0.1px solid white; 
+        border-radius: 10px; 
+        background-color: white; 
+        margin-right: 1px;
+        height: 200px;
+        overflow: hidden;
+    }
 
-
-/*
-.learn-section {
-    padding-top: 1px;
-    background-color:aliceblue;
-    height: 550px;    
 }
-.learn-section > h2 {
-    text-align: center;
-    color: #0945c4;
-    margin-top: 40px;
-    font-size: 30px;
-}
-
-.learn-cards {
-    display: grid;
-/*    grid-template-columns: auto auto auto ; *
-    grid-template-columns: 30% 30% 30%; 
-    margin: 3% 5%;
-    grid-gap: 5%;
-    border: 3px solid black; 
-}
-
-.Lcard {
-    border: 0.1px solid white;
-    border-radius: 10px;
-    background-color: white;
-}
-.Lcard > h3 {
-    color: #0945c4;
-    font-size: 17px;
-    font-weight: normal;
-    max-width: 70%;
-}
-.Lcard > p {
-    margin-top: 10px;
-    font-size: 12px;
-}
-
-.Lcard >p,h3 {
-    padding-left: 30px;
-    padding-right: 20px;
-}
-
-.hide-txt {
-    width: 60px;
-    color: orange;
-    cursor: pointer;
-}
-
-#more {
-    display: none;
-}
-
-*/

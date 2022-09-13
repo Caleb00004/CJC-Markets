@@ -24,16 +24,23 @@ header {
     padding: 5px;
     background-color: #111e51;
     font-size: clamp(0.6rem, 0.8vw, 0.9rem);
+    display: flex;
+    width: 100%;
 }
 
 header > .header-elements {
     display: flex;
-    justify-content: flex-end;
-    border: 1px solid;
+    margin-left: auto;
+    width: 290px;
 }
 
 .header-elements > button {
     margin: 10px 10px; 
+}
+
+.svg {
+    align-self: center;
+    display: none;
 }
 
 .header-elements > p {
@@ -52,6 +59,11 @@ button {
 	border-radius: 3px;
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #0d3a9b;
+}
+
 i {
     color: #111e51;
     padding-right: 1px;
@@ -265,6 +277,9 @@ i {
         header {
             padding: 5px;
         }
+        header > .header-elements {
+            width: 200px;
+        }
         
         .header-elements > p {
             padding: 1%;
@@ -355,12 +370,32 @@ i {
 
 @media screen and (max-width: 650px){
 
+    * {
+        outline: 1px solid green;
+    }
     button {
 
     }
     .navbar > ul {
         display: none;
+        padding-left: 10px;
+        background-color: rgb(251, 248, 248);
     }
+    .navbar > ul > li > img {
+        margin-right: 85%;
+        height: 40px;
+    }
+    .navbar > ul > li {
+        padding-left: 0%;
+    }
+    .navbar {
+        padding-left: 0%;   
+    }
+    
+    .svg {
+        display: flex;
+    }
+
     .top-left {
         position: absolute;
         top: 15%;
@@ -410,7 +445,7 @@ i {
 /*        outline: 1px solid limegreen !important;     */
     }
     .navbar {
-        height: 30px;
+/*        height: 30px; */
     }
 
     .container {

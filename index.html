@@ -16,13 +16,17 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/reviews-section.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
 </head>
 <body>
     <!-- HEADER -->
     <header>
+        <svg onClick="handle()" class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+        style="fill: rgb(255, 255, 255); font-size: '200px'; ;msFilter: ;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg>
         <div class="header-elements">
             <p>CONTACT US</p>
             <button>REGISTER NOW</button>
@@ -30,9 +34,11 @@
         </div>
     </header>
 
+    <script src="phoneNav.js"></script>
+
     <!-- NAVBAR -->
     <div class="navbar">
-        <ul>
+        <ul id="navbarID">
             <li><img src="./image/Logo.png"></li>
             <div class="dropdown">
                 <li><button class="dropbtn">COMPANY<i class="fa fa-caret-down">▾</i>
@@ -233,6 +239,46 @@
         </div>
     </div>
 
+    <!-- Learn section -->
+    <div class="learnSec" id="learnSec">
+        <!--            <div class="card-content">
+                    <div class="image">
+                        <img src="./blog 1.png" alt="">
+                    </div>
+        
+                    <div class="Lcard">
+                        <h3>Divergence Trading - An introduction for Traders</h3>
+                        <p>Olumo Rock is a mountain in south-western Nigeria. It is located in the city of Abeokuta, Ogun State,
+                            and was normally used as a natural fortress during inter-tribal warfare in the 19th century. Its patron spirit </p>
+                        <p class="hide-txt" id="hide-btn" onclick="hideText(02)" >READ MORE</p>    
+                    </div>
+                    </div> -->
+            </div>
+              
+<!--            <script src="script.js"></script> -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+        <script src="main.js"></script>
+
+        <script>
+            var elem = document.querySelector('.learnSec');
+            var flkty = new Flickity( elem, {
+                // options
+                cellAlign: 'left',
+                contain: true,
+                groupCells: 2,
+                wrapAround: true,
+                    pageDots: false
+            });
+    
+            // element argument can be a selector string
+            //   for an individual element
+            var flkty = new Flickity( '.learnSec', {
+            // options
+            });
+        </script>
+
     <!-- LEARN SECTION -->
 <!--    
     <div class="learn-section">
@@ -264,6 +310,7 @@
     </div>
 -->
 
+<!--
     <div class="learn-section">
         <h1>Learn More About Forex Trading</h1>  
         <section>
@@ -278,10 +325,10 @@
             <div class="swiper-pagination"></div>
         </section>
 
-        <!-- Swiper JS -->
+        <!- Swiper JS ->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-        <!-- Initialize Swiper -->
+        <!- Initialize Swiper ->
         <script>
             var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
@@ -323,7 +370,7 @@
             });
         </script>
     </div> 
-
+-->
     <!-- Join-us section-->
     <div class="join-section">
         <div class="join-content">
@@ -410,7 +457,7 @@
     
     //    contain: true
         });
-        </script>
+        </script> 
 
 
     <!-- Open SECTION-->
@@ -508,8 +555,6 @@
             </div>
         </div>
     </div>
-    <P>The one after that</P>
-
-        <script src="main.js"></script>
+<!--        <script src="main.js"></script> -->
 </body>
 </html>
