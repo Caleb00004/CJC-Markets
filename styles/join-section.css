@@ -1,20 +1,14 @@
-.join-section {
-     
+.join-section {     
     background-image: url("../image/mobile\ mt4.png");
     background-size: 25%;
-/*    background-size: contain; */
     background-repeat: no-repeat;
     background-position-x: 10%;
-/*    background-position-x: 200px; */
     background-position-y: 40px;
     display: flex;
     justify-content: flex-end;
-
 }
 
 .join-content {
-/*    position: absolute; */
-/*    right: 25%;  */
     padding-bottom: 50px;
     max-width: 400px;
     margin-right: 20%;
@@ -44,8 +38,6 @@
 
 .btn-group > button {
     display: flex;
-/*    height: 2.5vw; */
-/*    height: 50px; */
     height: 40px;
     margin: 3px;
     margin-top: 10px;
@@ -63,8 +55,6 @@
 .btn-group > button > img {
     margin: 0;
     height: 100%;
-/*    padding-bottom: 10px; */
-/*    border: 1px solid #0945c4; */
     border-right-style: solid;
     border-right-width: 1.5px;
     border-right-color: #0945c4;
@@ -75,7 +65,6 @@
     margin-bottom: auto;
     text-align: justify;
     padding-left: 3px;
-/*    padding-top: 4%; */
 }
 
 .btn-group > button > p > b {
@@ -91,7 +80,6 @@
 
     }
     .joinStart {
-/*        font-size: clamp(1.4rem, 2.0vw, 2.2rem) */
         font-size: 1.2rem;
     }
     .join-content > p {
@@ -116,7 +104,6 @@
 
 @media screen and (max-width: 650px){
     .joinStart {
-        /*        font-size: clamp(1.4rem, 2.0vw, 2.2rem) */
         font-size: 0.8rem;
     }
 
@@ -136,7 +123,6 @@
         font-size: 0.8rem;
     }
     .joinStart {
-/*        font-size: clamp(1.4rem, 2.0vw, 2.2rem) */
         font-size: 0.9rem;
     }
     .join-content > p {
@@ -157,13 +143,11 @@
     .btn-group > button > p > b {
         font-size: 0.6rem;
     }
-
 }
 
-
-
-
-
-
-
+@media screen and (max-width: 380px){
+    .join-content {
+        padding-left: 30px;
+    }   
+}
 

@@ -25,7 +25,7 @@
     <!-- HEADER -->
     <header>
         <svg onClick="handle()" class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
-        style="fill: rgb(255, 255, 255); font-size: '200px'; ;msFilter: ;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        style="fill: rgb(255, 255, 255); font-size: '200px';"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
         </svg>
         <div class="header-elements">
             <p>CONTACT US</p>
@@ -92,7 +92,6 @@
             <p>Trade with our custom indicator and a fully operational AI bot</p>
             <button>START TRADING</button>
         </div>
-<!--        <div class="bottom-right"><h2>Clikc button</h2></div> -->
     </div>
 
     <!-- WELCOME SECTION -->
@@ -240,137 +239,34 @@
     </div>
 
     <!-- Learn section -->
+    <h1 class="learn-h1">Learn More About Forex Trading</h1>
     <div class="learnSec" id="learnSec">
-        <!--            <div class="card-content">
-                    <div class="image">
-                        <img src="./blog 1.png" alt="">
-                    </div>
-        
-                    <div class="Lcard">
-                        <h3>Divergence Trading - An introduction for Traders</h3>
-                        <p>Olumo Rock is a mountain in south-western Nigeria. It is located in the city of Abeokuta, Ogun State,
-                            and was normally used as a natural fortress during inter-tribal warfare in the 19th century. Its patron spirit </p>
-                        <p class="hide-txt" id="hide-btn" onclick="hideText(02)" >READ MORE</p>    
-                    </div>
-                    </div> -->
-            </div>
-              
-<!--            <script src="script.js"></script> -->
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-        <script src="main.js"></script>
-
-        <script>
-            var elem = document.querySelector('.learnSec');
-            var flkty = new Flickity( elem, {
-                // options
-                cellAlign: 'left',
-                contain: true,
-                groupCells: 2,
-                wrapAround: true,
-                    pageDots: false
-            });
-    
-            // element argument can be a selector string
-            //   for an individual element
-            var flkty = new Flickity( '.learnSec', {
-            // options
-            });
-        </script>
-
-    <!-- LEARN SECTION -->
-<!--    
-    <div class="learn-section">
-        <h2>Learn More About Forex Trading</h2>
-        <div class="learn-cards">
-            <div key="01" class="Lcard">
-                <img width="100%" src="./image/blog 1.png">
-                <h3>Term of the Week - Stochastic Oscillator</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum, rerum quaerat praesentium laboriosam nihil
-                    quod tenetur! Rem, aliquid? Animi fugit exercitationem maxime ab reiciendis, voluptatem similique et a in!</p>
-                <p>Read More</p>    
-            </div>
-            <div key="02" class="Lcard">
-                <img width="100%" src="./image/blog 2.png">
-                <h3>Divergence Trading - An introduction for Traders</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum, rerum quaerat praesentium laboriosam nihil
-                    quod tenetur! Rem, aliquid?<span id="dots">...</span><span id="more">Animi fugit exercitationem maxime ab reiciendis, voluptatem similique et a in! 
-                    </span></p>
-                <p class="hide-txt" id="hide-btn" onclick="hideText(02)">Read More</p>
-            </div>
-            <div key="03" class="Lcard">
-                <img width="100%" src="./image/blog 3.png">
-                <h3>Term of the Week - Stochastic Oscillator</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum, rerum quaerat praesentium laboriosam nihil
-                    quod tenetur! Rem, aliquid? Animi fugit exercitationem maxime ab reiciendis, voluptatem similique et a in!</p>
-                <p>Read More</p>
-            </div>
-        </div>
     </div>
--->
+                      
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-<!--
-    <div class="learn-section">
-        <h1>Learn More About Forex Trading</h1>  
-        <section>
-            <div class="swiper mySwiper container" id="swipe-container">  
-            <div class="swiper-wrapper content" id="swipper-wrapper-content">
+    <script src="main.js"></script>
 
-            </div>
-            </div> 
+    <script>
+        var elem = document.querySelector('.learnSec');
+        var flkty = new Flickity( elem, {
+            // options
+            cellAlign: 'left',
+            contain: true,
+            groupCells: 1,
+            wrapAround: true,
+                pageDots: false
+        });
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </section>
+        // element argument can be a selector string
+        //   for an individual element
+        var flkty = new Flickity( '.learnSec', {
+        // options
+        });
+    </script>
 
-        <!- Swiper JS ->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-        <!- Initialize Swiper ->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 40,
-            slidesPerGroup: 3,
-        /*  
-            loop: true,
-            loopFillGroupWithBlank: true,
-        pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            }, */
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            /*
-            breakpoints: {
-            // when window width is >= 480px
-            480: {
-            loop: true,
-            loopedSlides: 1,
-            slidesPerView: 1,
-            spaceBetween: 30,
-            slidesPerGroup: 1,
-            },
-            // when window width is >= 640px
-            640: {
-                slidesPerGroup: 1,
-                slidesPerView: 3,
-                spaceBetween: 40,
-                loop: true,
-                loopFillGroupWithBlank: true,
-                
-                loopedSlides: 1,
-                direction: "horizontal"
-            }}
-*/            
-            });
-        </script>
-    </div> 
--->
     <!-- Join-us section-->
     <div class="join-section">
         <div class="join-content">
@@ -386,7 +282,7 @@
         </div>
     </div>
 
-<!---->    <!-- MISSING A SECTION -->
+    <!-- Reviews Section -->
     <div class="review-section">
         <h1>What Our Clients Say about CJC Markets</h1>
         <div class="main-carousel" data-flickity>
@@ -555,6 +451,5 @@
             </div>
         </div>
     </div>
-<!--        <script src="main.js"></script> -->
 </body>
 </html>

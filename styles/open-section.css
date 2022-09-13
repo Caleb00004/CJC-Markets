@@ -73,6 +73,12 @@
 }
 
 @media screen and (max-width: 480px){
+    .orange-btn:hover {
+        background-color: none;
+    }
+    .orange-btn:active {
+        background-color: rgb(211, 120, 8);
+    }
     .open-section {
         padding: 10px 5px;
     }
@@ -86,10 +92,10 @@
         height: 20px;
     }
     .o-Card > h3 {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .o-Card > p{
         font-size: 0.5rem;
-        max-width: 100%;
+        max-width: 90%;
     }
 }

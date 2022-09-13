@@ -97,11 +97,4 @@ tr:nth-child(even) {
     .table-section > h2 {
         font-size: 1rem;
     }
-/*    .table-section > p {
-        padding-top: 10px;
-        width: 35%;
-        font-size: 1vw;
-        margin-right: auto;
-        margin-left: auto;
-    }   */
 }

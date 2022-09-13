@@ -1,3 +1,4 @@
+// Mapping through and rendering cards for the Learn Section Carousel.
 let data = [{   
     head: "Term of the Week - Stochastic",
     summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum, rerum quaerat praesentium laboriosam nihil
@@ -47,30 +48,8 @@ function displayCarousel(image,head,summary) {
     )
 }
 
-//let getDoc = document.getElementById("carousle-cell")
 mapData = data.map(dataItem => {
     return displayCarousel(dataItem.image,dataItem.head,dataItem.summary)}
 )
 
-//console.log(mapData)
-
-
 document.getElementById("learnSec").innerHTML = mapData
-
-/* function hideText(id) {
-    console.log(id)
-    document.get
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("hide-btn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
-    }
-} */

@@ -6,18 +6,12 @@
 * {
     margin: 0;
     font-family:'outfit';
-/*    outline: 1px solid limegreen !important;   */
     box-sizing: border-box;
 }
 
 h1 {
     font-size: clamp(1.4rem, 2.5vw, 2.2rem)
 }
-
-/*
-p {
-    font-size: 0.9rem; 
-} */    
 
 /* Header Section */
 header {
@@ -62,7 +56,7 @@ button {
 
 button:hover {
     background-color: #0d3a9b;
-}
+}  
 
 i {
     color: #111e51;
@@ -213,7 +207,6 @@ i {
     margin-top: auto;
     margin-bottom: auto;
     font-size: clamp(0.7rem, 1.1vw, 0.8rem);
-/*    margin-top: 80px; */
 }
 .welcome-text > h1 {
     color: #0945c4;
@@ -269,10 +262,6 @@ i {
 }
 
 @media screen and (max-width: 900px) {
-        * {
-/*            border: 1px solid limegreen !important;  */
-        }
-
         /* Header Section */
         header {
             padding: 5px;
@@ -320,14 +309,8 @@ i {
         }
         .top-left > h2 {
             font-weight: 1;
-        /*    font-size: 2vw;  */
             padding-bottom: 10px;
         }
-                  
-          .top-left > button {
-/*            padding: 5px 10px;
-            font-size: 0.6rem; */
-          } 
             
           /* Bottom right text */
           .bottom-right {
@@ -369,13 +352,14 @@ i {
 }
 
 @media screen and (max-width: 650px){
-
-    * {
-        outline: 1px solid green;
+    button:hover {
+        background-color: none;
     }
-    button {
 
+    button:active {
+        background-color: #0d3a9b;    
     }
+
     .navbar > ul {
         display: none;
         padding-left: 10px;
@@ -441,13 +425,6 @@ i {
 }
 
 @media screen and (max-width: 480px){
-    * {
-/*        outline: 1px solid limegreen !important;     */
-    }
-    .navbar {
-/*        height: 30px; */
-    }
-
     .container {
         height: 200px;
     }
@@ -488,6 +465,5 @@ i {
         .why-button button {
             font-size: 0.5rem;
         }
-
-
 }
+  

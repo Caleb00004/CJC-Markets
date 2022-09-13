@@ -1,5 +1,4 @@
-// let element = document.getElementById('navbarID')
-// element.addEventListener('resize', handle)
+// THis Js file is to monitor Window Event Listener for when to remove and display Phone Nav.
 window.addEventListener('resize', add);
 
 function add(){
@@ -9,12 +8,10 @@ function add(){
 }
 
 function remove() {
-    console.log('remove')
     window.removeEventListener('resize', remove)
 }
 
 function handle() {
-    console.log('called')
     let element = document.getElementById('navbarID')
     if (element.style.display === "") {
         if (window.innerWidth < '650') {
@@ -25,10 +22,8 @@ function handle() {
     } else {
         element.style.display = ""
         remove()
-//        console.log(innerWidth)
-//        element.removeEventListener('resize', handle)
     }
 }
 
 
-console.log(innerWidth)
+// console.log(innerWidth)

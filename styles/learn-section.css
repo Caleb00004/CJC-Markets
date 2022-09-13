@@ -20,12 +20,20 @@
     padding: 3px 3px;
 }
 
+.learn-h1 {
+    font-size: clamp(1.1rem, 2.5vw, 2.2rem);
+    padding-top: 15px;
+    background-color: aliceblue;
+    color: #0945c4;
+    text-align: center;
+}
+
 .learnSec {
     background-color: aliceblue;
     color: aliceblue;
     padding-bottom: 20px;
     padding-left: 5%;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .card-content {
@@ -74,50 +82,42 @@
         max-width: 100%;
         font-size: 0.7rem;
     }
-    .flickity-prev-next-button {
+    .card-content {
+        width: 40%;
     }
+
 }
 
 
 @media screen and (max-width: 480px){
+    .learnSec {
+        padding-top: 100px;
+    }
+
     .flickity-prev-next-button {
-        width: 2%;
         height: 10%;
-        border-radius: 5px;
         margin-left: -10px;
         margin-right: -10px;
-        margin-top: -20px;
+        margin-top: 5px;
     }
     .learnSec {
         padding-left: 3%;
+        padding-right: 3%;
         padding-top: 20px;
         padding-bottom: 20px;
     }
     .Lcard h3 {
         color: #0945c4;
         max-width: 100%;
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     .Lcard p {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .card-content img {
-        height: 5rem;
+        height: 8rem;
     }
     .card-content {
-        border: 0.1px solid white; 
-        border-radius: 10px; 
-        width: 28%;
-        background-color: white; 
-        margin: 0px 5% 0px 5%;
+        width: 100%;
     }
-    .card-content {
-        border: 0.1px solid white; 
-        border-radius: 10px; 
-        background-color: white; 
-        margin-right: 1px;
-        height: 200px;
-        overflow: hidden;
-    }
-
 }
